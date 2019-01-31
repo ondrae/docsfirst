@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Results</title>
+    </head>
+    <body>
+        <h1>Results</h1>
+        <h2>First Name: <%= results[:first_name] %></h2>
+        <h2>Last Name: <%= results[:last_name] %></h2>
+        <h2>Address: <%= results[:street_address] %>
+          <br/>
+          <%= results[:city_state_zip] %>
+        </h2>
+        <img src="<%= @filename %>" width="350px"/>
+    </body>
+</html>
