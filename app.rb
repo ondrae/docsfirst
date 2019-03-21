@@ -13,6 +13,11 @@ class App < Sinatra::Base
     erb :form
   end
 
+  post "/" do
+    puts request.env
+    puts headers
+  end
+
   post '/save_image' do
 
     @filename = params[:file][:filename]
